@@ -1,0 +1,46 @@
+@import url(./_reset.css);
+@import url(./_base.css);
+@import url(./_typography.css);
+@import url(./_constants.css);
+
+body{
+    /* hard coded color value */
+    background-color: rgb(126, 32, 32);
+    /* using a css variable instead */
+    background-color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    /* 
+        Look Ma! 
+        nested selectors with no Sass!!! 
+    */
+    > .wrapper{
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        border: var(--wrapper-border) 0.3rem dashed;
+
+        > h1 {
+            margin: 3rem;;
+        }
+        > p {
+            text-align: center;
+            line-height: 1.8;
+        }
+        > img {
+            margin: 3rem;
+            width: 5rem;
+            border-radius: 50%;
+            border: white 0.05rem solid;
+            box-shadow: 0 0rem 1rem 0.2rem var(--color-dark);
+        
+        }
+    }
+}

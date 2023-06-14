@@ -1,0 +1,14 @@
+:root{
+    /*------- Generic usage... -------*/
+    --color-primary:RoyalBlue;
+    --color-secondary:DodgerBlue;
+    --color-success:LimeGreen;
+    --color-danger:Crimson;
+    --color-warning:Gold;
+    --color-info:DeepSkyBlue;
+    --color-light:rgb(238, 239, 241);
+    --color-gray:rgb(211, 211, 212);
+    --color-dark:rgba(2, 14, 27, 0.696);
+    /*------- Project Specific... -------*/
+    --wrapper-border:  rgba(255, 20, 145, 0.322);
+}
